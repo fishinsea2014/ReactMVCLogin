@@ -5,11 +5,118 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Login by React + MVC</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style type="text/css">
+        body {
+            width: 100%;
+            text-align: center;
+            background-color: gray;
+        }
+
+        .container {
+            width: 60%;
+            background-color: orangered;
+            text-align: center;
+            margin: 0 auto;
+            background-image: url('../../Content/imgs/back.jpg');
+            height: 600px;
+        }
+
+        #content {
+            width: 360px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: black;
+            opacity: 0.8;
+            height: 480px;
+        }
+
+        input[type=submit].btn-block {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        label {
+            color: white;
+            margin-left: 5px;
+        }
+
+        ul li {
+            list-style: none;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+            ul li input {
+                width: 280px;
+            }
+
+            ul li select {
+                width: 280px;
+            }
+
+            ul li a {
+                font-size: small;
+                color: white;
+            }
+
+        #welcomeTitle {
+            color: white;
+        }
+
+        #login-field {
+            border: none;
+        }
+
+        #logo {
+            width: 360px;
+            margin-top: 5px;
+        }
+
+        #PostTips li {
+            list-style: none;
+            font-size: smaller;
+            color: whitesmoke;
+            text-align: left;
+            margin-left: 25px;
+        }
+
+        @@media screen and (max-width: 768px) {
+            .container {
+                width: 480px;
+            }
+        }
+
+        @@media screen and (max-width:992px) and (min-width:768px) {
+            .container {
+                width: 80%;
+            }
+        }
+
+        @@media screen and (max-width:1200px) and (min-width:992px) {
+            .container {
+                width: 60%;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <div id="content"></div>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.development.js"></script>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.development.js"></script>
-    <script src="@Url.Content("~/Scripts/Components/Login.jsx")"></script>
+    <div class="container">
+        <div id="content"></div>
+        
+    </div>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.development.js"></script>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.development.js"></script>
+        <script src="@Url.Content("~/Scripts/Components/Login.jsx")"></script>
+    
 </body>
 </html>
+
+
